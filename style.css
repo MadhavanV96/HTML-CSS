@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+
+#bodyBG{
+    /* background: radial-gradient(rgba(241, 231, 231, 0),rgba(255,255,255,0)); */
+    background-image: radial-gradient(rgba(70, 10, 81, 0.75),rgba(0, 0, 0, 0.75)),url(images/bg\ image.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    height:120vh;
+    
+ 
+}
+.navigationBar{
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.704);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 2px solid rgba(150, 150, 150, 0.252);
+    
+}
+.navigationBar::before{
+    content: '';
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height: 100%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,0.4),transparent) ;
+    transition: .5s;
+}
+.navigationBar:hover::before{
+    left: 100%;
+}
+
+
+.unorderedList>li{
+    display: inline;
+    padding:10px;
+    position: relative;
+    z-index: 1; 
+    
+}
+
+.logo{
+    width: 60px;
+    padding: 10px;
+}
+
+.firstPart{
+    
+    /* background-position: relative; */
+    width: 100%;
+    /* min-height: 100vh; */
+    padding: 100px 30px 250px 10px;
+    
+}
+.firstPart h1{
+   
+    color:rgb(255, 251, 251);
+    max-width: 800px;
+    font-size: 70px;
+   font-weight: 600;
+   line-height: 85px;
+}
+.firstPart p{
+    color:rgb(255, 251, 251);
+    font-size: 35px;
+    /* margin-bottom: 150px; */
+}
+
+
+nav span{
+    position:absolute;
+    top:0;
+    left:0;
+    width:67px;
+    height:100%;
+    border-radius:8px;
+    align-items: center;
+    
+}
+ul li:hover{
+font-weight: bolder;
+}
+
+ul li:nth-child(1):hover~span{
+    left:0px;
+    background:linear-gradient(45deg,#4f1919,#ff3333);
+}
+ul li:nth-child(2):hover~span{
+    left:71px;
+    background:linear-gradient(45deg,#4f1919,#ff3333);
+}
+ul li:nth-child(3):hover~span{
+    left:142px;
+    width: 88px;
+    background:linear-gradient(45deg,#4f1919,#ff3333);
+}
+ul li:nth-child(4):hover~span{
+    left:226px;
+    width: 67px;
+    background:linear-gradient(45deg,#4f1919,#ff3333);
+}
+ul li:nth-child(5):hover~span{
+    left:295px;
+    width: 103px;
+    background:linear-gradient(45deg,#4f1919,#ff3333);
+}
+ul li:nth-child(6):hover~span{
+    left:402px;
+    width: 90px;
+    background:linear-gradient(45deg,#4f1919,#ff3333);
+}
+.aboutMe{
+    background-color: white;
+    width:70%;
+    height: auto;
+    margin:auto;
+    margin-right: 0px;
+    align-items: Right;
+    justify-content: right;
+    padding:40 px 40 px;
+}
+.aboutMe>h1{
+    text-align: center;
+}
+
+#MyProfilePic{
+    width: 100px;
+    float: left;
+}
+#aboutContent{
+margin-bottom: 5 px;
+}
+
+#insideAbtMe{
+    margin: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    justify-content: center;
+    padding: 10px ;
+}
+    
